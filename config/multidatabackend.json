@@ -1,0 +1,40 @@
+[
+    {
+        "id": "flux_lora_1",
+        "type": "local",
+        "crop": true,
+        "crop_aspect": "square",
+        "crop_style": "center",
+        "resolution": 1024,
+        "minimum_image_size": 1024,
+        "maximum_image_size": 1024,
+        "target_downsample_size": 1024,
+        "resolution_type": "pixel_area",
+        "cache_dir_vae": "cache/vae/flux_lora_1",
+        "instance_data_dir": "datasets/training_data",
+        "disabled": false,
+        "skip_file_discovery": "",
+        "caption_strategy": "filename",
+        "metadata_backend": "discovery"
+    },
+    {
+        "id": "an example backend for text embeds.",
+        "dataset_type": "text_embeds",
+        "default": true,
+        "type": "aws",
+        "aws_bucket_name": "textembeds-something-yummy",
+        "aws_region_name": null,
+        "aws_endpoint_url": "https://foo.bar/",
+        "aws_access_key_id": "wpz-764e9734523434",
+        "aws_secret_access_key": "xyz-sdajkhfhakhfjd",
+        "aws_data_prefix": "",
+        "cache_dir": ""
+    },
+    {
+        "id": "alt-embed-cache",
+        "dataset_type": "text_embeds",
+        "default": false,
+        "type": "local",
+        "cache_dir": "/path/to/textembed_cache"
+    }
+]
